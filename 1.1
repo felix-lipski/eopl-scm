@@ -1,0 +1,54 @@
+1.1.1
+S is {3n + 2 | n ∈ N}
+
+top-down
+n = 2
+n-3 in S
+
+bottom-up
+2 in S
+n in S  ?  n+3 in S
+
+inference
+
+------
+2 in S
+
+ n in S
+--------
+n+3 in S
+
+
+1.1.2 
+S is {2n + 3m + 1 | n, m ∈ N}
+
+top-down
+n = 1
+n-2 in S
+n-3 in S
+
+bottom-up
+1 in S
+n in S  ?  ( n+2 in S  &  n+3 in S )
+
+inference
+
+------
+1 in S
+
+ n in S
+--------
+n+3 in S
+
+ n in S
+--------
+n+2 in S
+ 
+
+1.1.3
+S is {(n, 2n + 1) | n ∈ N}
+
+top-down
+(n, m) = (0, 1)
+(n-1, n-2) in S
+

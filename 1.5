@@ -1,0 +1,12 @@
+LcExp ::= Identifier
+      ::= (lambda (Identifier) LcExp)
+      ::= (LcExp LcExp)
+
+Exercise 1.5 [**] Prove that if e ∈ LcExp, then there are the same number of left and right parentheses in e.
+
+1. e is of form Identifier, it has no parentheses
+2. e is of form (lambda (Identifier) LcExp)
+    LcExp has n parentheses pairs -> e has n+2 parentheses pairs
+3. e is of form (LcExp LcExp)
+    the two LcExps have n and m parentheses pairs -> e has n+m+1 parentheses pairs, making it balanced
+

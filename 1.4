@@ -1,0 +1,10 @@
+    Exercise 1.4 [⋆] Write a derivation from List-of-Int to (-7 . (3 . (14 . ()))).
+
+    List-of-Int
+=>  (Int . List-of-Int)
+=>  (Int . (Int . List-of-Int))
+=>  (Int . (Int . (Int . List-of-Int)))
+=>  (-7 . (Int . (Int . List-of-Int)))
+=>  (-7 . (3 . (Int . List-of-Int)))
+=>  (-7 . (3 . (14 . List-of-Int)))
+=>  (-7 . (3 . (14 . ())))
